@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{7EB27759-5AB1-46F7-9647-35F9BABE818B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Practica5</RootNamespace>
+    <AssemblyName>Practica5</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\AlumnoAdaptador.cs" />
+    <Compile Include="Adapter\IAlumno.cs" />
+    <Compile Include="Alumno.cs" />
+    <Compile Include="AlumnoMuyEstudioso.cs" />
+    <Compile Include="Aula.cs" />
+    <Compile Include="ClaveValor.cs" />
+    <Compile Include="Cola.cs" />
+    <Compile Include="Coleccionable.cs" />
+    <Compile Include="ColeccionMultiple.cs" />
+    <Compile Include="Command\Ordenable.cs" />
+    <Compile Include="Command\OrdenAulaLlena.cs" />
+    <Compile Include="Command\OrdenEnAula1.cs" />
+    <Compile Include="Command\OrdenEnAula2.cs" />
+    <Compile Include="Command\OrdenInicio.cs" />
+    <Compile Include="Command\OrdenLlegaAlumno.cs" />
+    <Compile Include="Comparable.cs" />
+    <Compile Include="Conjunto.cs" />
+    <Compile Include="Decorator\DecoradoAsteriscos.cs" />
+    <Compile Include="Decorator\Decorador.cs" />
+    <Compile Include="Decorator\DecoradorLegajo.cs" />
+    <Compile Include="Decorator\DecoradorNota.cs" />
+    <Compile Include="Decorator\DecoradorOrdenSecuencial.cs" />
+    <Compile Include="Decorator\DecoradorPromocion.cs" />
+    <Compile Include="Diccionario.cs" />
+    <Compile Include="FactoryMethod\Coleccionables\FabricaCola.cs" />
+    <Compile Include="FactoryMethod\Coleccionables\FabricaColeccionable.cs" />
+    <Compile Include="FactoryMethod\Coleccionables\FabricaColeccionMultiple.cs" />
+    <Compile Include="FactoryMethod\Coleccionables\FabricaConjunto.cs" />
+    <Compile Include="FactoryMethod\Coleccionables\FabricaDiccionario.cs" />
+    <Compile Include="FactoryMethod\Coleccionables\FabricaPila.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaAlumno.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaAlumnoMuyEstudioso.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaComparables.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaDecoradosAlum.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaDecoradosAlumEst.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaNumero.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaPersona.cs" />
+    <Compile Include="FactoryMethod\Comparables\FabricaProfesor.cs" />
+    <Compile Include="FactoryMethod\Comparables\SmartStudentFactory.cs" />
+    <Compile Include="FactoryMethod\Comparables\StudentsFactory.cs" />
+    <Compile Include="GeneradorDeDatosAleatorios.cs" />
+    <Compile Include="Iterator\Iterable.cs" />
+    <Compile Include="Iterator\Iterador.cs" />
+    <Compile Include="Iterator\Iterador2.cs" />
+    <Compile Include="Iterator\IteradorColeccionMultiple.cs" />
+    <Compile Include="Iterator\IteradorDiccionario.cs" />
+    <Compile Include="Iterator\IteradorPila.cs" />
+    <Compile Include="LectorDeDatos.cs" />
+    <Compile Include="MDPI\MDPI.cs" />
+    <Compile Include="Numero.cs" />
+    <Compile Include="Observer\IObservador.cs" />
+    <Compile Include="Observer\Observado.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="Pila.cs" />
+    <Compile Include="Profesor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\ProxyAlumno.cs" />
+    <Compile Include="Strategy\porAntiguedad.cs" />
+    <Compile Include="Strategy\porCalificacion.cs" />
+    <Compile Include="Strategy\porClave.cs" />
+    <Compile Include="Strategy\porDni.cs" />
+    <Compile Include="Strategy\porLegajo.cs" />
+    <Compile Include="Strategy\porNombre.cs" />
+    <Compile Include="Strategy\porPromedio.cs" />
+    <Compile Include="Strategy\porValor.cs" />
+    <Compile Include="Strategy\Strategy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adapter" />
+    <Folder Include="Decorator" />
+    <Folder Include="FactoryMethod" />
+    <Folder Include="FactoryMethod\Coleccionables" />
+    <Folder Include="FactoryMethod\Comparables" />
+    <Folder Include="Iterator" />
+    <Folder Include="MDPI" />
+    <Folder Include="Command" />
+    <Folder Include="Proxy" />
+    <Folder Include="Observer" />
+    <Folder Include="Strategy" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
